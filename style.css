@@ -3,6 +3,10 @@ body {
     background-color: hsl(214, 17%, 92%);
     margin: 0;
     padding: 20px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -25,7 +29,7 @@ h2 {
     background-color: hsl(0, 0%, 100%);
     padding: 32px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -148,16 +152,15 @@ h2 {
     color: inherit;
 }
 
-/* Media query for mobile devices */
 @media (max-width: 768px) {
     .testimonials-grid {
         grid-template-columns: 1fr;
-        gap: 16px; /* Adjust gap for mobile if needed */
+        gap: 16px; 
     }
 
     .testimonial {
-        grid-column: auto;
-        grid-row: auto;
+        grid-column: auto !important;
+        grid-row: auto !important;
     }
 
     .testimonial:nth-child(1) {
